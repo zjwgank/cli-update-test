@@ -4,7 +4,7 @@
   "description": "cli update test",
   "main": "index.js",
   "bin": {
-    "cli": "bin/index.js"
+    "demoCli": "bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -6,7 +6,7 @@ const chalk = require('chalk')
 const figlet = require('figlet')
 const program = require('commander')
 
-const { IsGit } = require('../lib')
+const { IsGit, update } = require('../lib')
 
 // const rl = readline.createInterface(process.stdin, process.stdout)
 
@@ -25,6 +25,7 @@ program.usage('[ options ] command')
 
 program.command('update').description('update cli demo').action(() => {
   console.log('update----------')
+  update()
 })
 
 program.parse(process.argv)
@@ -33,9 +34,9 @@ if (!program.args.length) {
   program.help()
 }
 
-if (!IsGit(".git")) {
-  console.log(chalk.red('It`s sorry for no git'))
-  process.exit()
-}
+// if (!IsGit(".git")) {
+//   console.log(chalk.red('It`s sorry for no git'))
+//   process.exit()
+// }
 
 

@@ -15,7 +15,7 @@ const { IsGit } = require('../lib')
 //   rl.close()
 // })
 
-const tips = chalk.yellow(figlet.textSync('cliDemo', { font: 'Ghost', horizontalLayout: 'default', verticalLayout: 'default' }))
+const tips = chalk.yellow(figlet.textSync('cli-update-test', { font: 'Ghost', horizontalLayout: 'default', verticalLayout: 'default' }))
 console.log(tips)
 
 program.version('0.0.1')
